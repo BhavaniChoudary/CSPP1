@@ -1,6 +1,6 @@
 '''
- @author : shanmukhsurendra
- IN this Program we use while, For loop to get
+ @author : BhavaniChoudary
+ In this Program we use while, For loop to get
  output even .
 '''
 Y = 2
