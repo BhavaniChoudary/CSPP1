@@ -1,7 +1,7 @@
 '''
 @author : BhavaniChoudary
- In this Program we use while, For loop to get
- output  .
+ In this Program we use for and while loops to get
+ output.
  '''
 SUM = 0
 END = 1
