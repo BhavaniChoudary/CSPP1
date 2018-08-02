@@ -31,7 +31,7 @@ def main():
             sub_str += input_str[j]
         if len(sub_str) > len(temp_str):
             temp_str = sub_str
-        print(temp_str)
+    print(temp_str)
 
 
 if __name__ == "__main__":
