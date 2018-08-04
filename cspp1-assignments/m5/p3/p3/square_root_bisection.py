@@ -11,7 +11,7 @@ def main():
     '''
     num = int(input())
     epsilon = 0.01
-    mid = num/2 
+    mid = num/2
     low = 0
     high = num
     while abs(mid**2-num) >= epsilon:
