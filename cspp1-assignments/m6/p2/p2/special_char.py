@@ -10,7 +10,7 @@ def main():
     '''
     str_input = input()
     num_special  = 0
-    for char in a_input:
+    for char in a=str_input:
         if char in ("!@#$%^&*"):
         	num_special += 1
         print (" ")
