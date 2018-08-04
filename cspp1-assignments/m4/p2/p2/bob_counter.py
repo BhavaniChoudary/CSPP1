@@ -27,9 +27,7 @@ def main():
             if v_a == 3:
                 c_a += 1
     print(c_a)
-    # the input string is in s
-    # remove pass and start your code here
-
+    
 
 if __name__ == "__main__":
     main()
