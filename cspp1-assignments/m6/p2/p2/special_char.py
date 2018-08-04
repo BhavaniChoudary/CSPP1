@@ -13,7 +13,7 @@ def main():
     for char in str_input:
         if char in "!@#$%^&*":
             n_special += 1
-        print(" ")
+        print("")
 
 if __name__ == "__main__":
     main()
