@@ -11,16 +11,16 @@ def main():
     '''
     num = int(input())
     epsilon = 0.01
-    l_n = 0.0
-    h_n = num
-    m_n = (l_n + h_n)/2.0
-    while abs(m_n**2-num) >= epsilon:
-        if m_n**2 < num:
-            l_n = m_n
+    mid = num/2 
+    low = 0
+    high = num
+    while abs(mid**2-num) >= epsilon:
+        if mid**2 < num:
+            low = mid
         else:
-            h_n = m_n
-        m_n = (l_n + h_n/2.0)
-    print(m_n)
+            high = mid
+        mid = (low+high)/2
+    print(str(mid))
 
     # your code starts here
 
