@@ -9,11 +9,11 @@ def main():
     Read string from the input, store it in variable str_input.
     '''
     str_input = input()
-    num_special  = 0
-    for char in a=str_input:
-        if char in ("!@#$%^&*"):
-        	num_special += 1
-        print (" ")
+    n_special = 0
+    for char in str_input:
+        if char in "!@#$%^&*":
+            n_special += 1
+        print(" ")
 
 if __name__ == "__main__":
     main()
