@@ -12,7 +12,7 @@ def square(m_n):
     return  m_n * m_n
 def main():
     '''
-    Square root
+    Square 
     '''
     data = input()
     data = float(data)
