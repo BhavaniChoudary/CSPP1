@@ -11,15 +11,18 @@ def gcdRecur(a, b):
     
     returns: a positive integer, the greatest common divisor of a & b.
     '''
-    max_n = max(a, b)
     if a == 0 or b == 0:
         return 0
+    if a % b == 0:
+        return b
+    elif b % a == 0:
+        return a
+    elif a > b:
+        return gcdRecur(b, a%b)
     else:
-        for i in range(1, max_n):
-            if a % i == 0 and b % i == 0:
-                result = i
-    return result
-    
+        return gcdRecur(a, b%a)
+
+
 def main():
     data = input()
     data = data.split()
