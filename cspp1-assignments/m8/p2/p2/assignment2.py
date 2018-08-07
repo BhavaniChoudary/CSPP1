@@ -13,13 +13,13 @@ def sumofdigits(n_a):
     '''
     if n_a == 0:
         return n_a
-    return n_a % 10 + sumofdigits(n_a)
+    return n_a % 10 + sumofdigits(n_a//10)
 def main():
     '''
     Sum of individual digits of a given number
     '''
     a_a = input()
-    print(sumofdigits(int(a_a//10)))
+    print(sumofdigits(int(a_a)))
 
 if __name__ == "__main__":
     main()
