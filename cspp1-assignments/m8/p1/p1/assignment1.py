@@ -3,25 +3,21 @@
 # Write a Python function, factorial(n), that takes in one number and returns the factorial of given number.
 # This function takes in one number and returns one number.
 '''
-
 def factorial(n):
     '''
     n is positive Integer
 
     returns: a positive integer, the factorial of n.
     '''
-    if n > 0:
-        return a
+    if n == 0 or n == 1:
+        return 1 
     else:
-        return a*factorial(a, n-1)
-    
-    
+        return a*factorial(a-1)
 def main():
     '''
     Factorial
     '''
     a = input()
     print(factorial(int(a)))    
-
-if __name__== "__main__":
+if __name__ == "__main__":
     main()
