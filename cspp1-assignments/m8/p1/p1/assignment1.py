@@ -10,15 +10,14 @@ def factorial(n_m):
 
     returns: a positive integer, the factorial of n.
     '''
-    if n_m == 0 or n_m == 1:
+    if n_m in (0, 1):
         return 1
-    else:
-        return n_m*factorial(n_m-1)
+    return n_m*factorial(n_m-1)
 def main():
     '''
     Factorial
     '''
     a_m = input()
-    print(factorial(int(a_m)))  
+    print(factorial(int(a_m)))
 if __name__ == "__main__":
     main()
