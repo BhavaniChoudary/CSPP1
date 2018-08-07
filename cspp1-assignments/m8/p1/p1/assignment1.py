@@ -3,16 +3,16 @@
 # Write a Python function, factorial(n), that takes in one number and returns the factorial of given number.
 # This function takes in one number and returns one number.
 '''
-def factorial(n):
+def factorial(n_m):
     '''
     n is positive Integer
 
     returns: a positive integer, the factorial of n.
     '''
-    if n == 0 or n == 1:
+    if n_m == 0 or n_m == 1:
         return 1 
     else:
-        return n*factorial(n-1)
+        return n_m*factorial(n_m-1)
 def main():
     '''
     Factorial
