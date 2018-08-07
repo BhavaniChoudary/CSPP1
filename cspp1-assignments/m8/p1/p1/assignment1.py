@@ -1,8 +1,8 @@
+'''
 # Exercise: Assignment-1
 # Write a Python function, factorial(n), that takes in one number and returns the factorial of given number.
-
 # This function takes in one number and returns one number.
-
+'''
 
 def factorial(n):
     '''
@@ -10,12 +10,16 @@ def factorial(n):
 
     returns: a positive integer, the factorial of n.
     '''
-    # Your code here
-    pass
+    if n > 0:
+        return a
+    else:
+        return a*factorial(a, n-1)
     
-
-
+    
 def main():
+    '''
+    Factorial
+    '''
     a = input()
     print(factorial(int(a)))    
 
