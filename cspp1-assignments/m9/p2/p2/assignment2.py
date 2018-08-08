@@ -19,11 +19,11 @@ def get_guessed_word(secret_word, letters_guessed):
             i = '_'
             a_b = a_b + "_"
         else:
-            a_b = a_b + 1
+            a_b = a_b + i
     return a_b
 
 
-def main():
+def main():s
     '''
     Main function for current assignment
     '''
