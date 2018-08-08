@@ -23,7 +23,7 @@ def get_guessed_word(secret_word, letters_guessed):
     return a_b
 
 
-def main():s
+def main():
     '''
     Main function for current assignment
     '''
