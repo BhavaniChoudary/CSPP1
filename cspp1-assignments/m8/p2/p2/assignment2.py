@@ -3,6 +3,7 @@
 # Write a Python function, sumofdigits, that takes in one number
 and returns the sum of digits of given number.
 # This function takes in one number and returns one number.
+@author : BhavaniChoudary
 '''
 
 def sumofdigits(n_a):

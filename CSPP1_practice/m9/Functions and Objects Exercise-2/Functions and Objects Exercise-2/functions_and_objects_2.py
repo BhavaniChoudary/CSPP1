@@ -7,7 +7,6 @@ def apply_to_each(L, f):
         L[i] = f(L[i])
     print (L)
 
-
 def main():
     data = input()
     data = data.split()
