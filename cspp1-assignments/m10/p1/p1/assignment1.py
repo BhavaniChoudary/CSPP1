@@ -15,11 +15,9 @@ def get_available_letters(letters_guessed):
     a_a = ""
     a_b = 'abcdefghijklmnopqrstuvwxyz'
     for i in a_b:
-        if i not in Letters_guessed:
+        if i not in letters_guessed:
             a_a = a_a + i
     return a_a 
-
-
 
 def main():
     '''
