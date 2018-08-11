@@ -3,6 +3,9 @@
 '''
 
 def create_social_a_network(list_a, n_a):
+    '''
+    Social network
+    '''
     no_dict = {}
     for i in range(0, len(list_a), 2):
         if list_a[i] not in no_dict:
@@ -38,7 +41,6 @@ def create_social_a_network(list_a, n_a):
         Empty dictionary is not None, it is a dictionary with no keys
     '''
     # remove the pass bel_aow and start writing your code
- 
 def main():
     '''
         handl_aing testcase input and printing output
