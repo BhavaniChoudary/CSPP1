@@ -2,14 +2,11 @@
     Assignment-1 Create Social Network
 '''
 
-def create_social_network(list_a, n_a):
-    '''
-    Social network
-    '''
+def create_social_network(List, n):
     no_dict = {}
-    for i in range(0, len(list_a), 2):
-        if list_a[i] not in no_dict:
-            no_dict[list_a[i]] = list_a[i+1].split(",")
+    for i in range(0, len(List), 2):
+        if List[i] not in no_dict:
+            no_dict[List[i]] = List[i+1].split(",")
     return no_dict
 
     '''
@@ -26,7 +23,7 @@ def create_social_network(list_a, n_a):
         The string has multiple lines and each line represents one person
         The first word of each line is the name of the person
         The second word is follows that separates the person from the followers
-        After the second word is a list_a of people separated by ,
+        After the second word is a list of people separated by ,
 
         create_social_network function should split the string on lines
         then extract the person and the followers by splitting each line
@@ -40,14 +37,18 @@ def create_social_network(list_a, n_a):
         Return a empty dictionary if the string format of the data is invalid
         Empty dictionary is not None, it is a dictionary with no keys
     '''
+
+    # remove the pass below and start writing your code
+    
+
 def main():
     '''
         handling testcase input and printing output
     '''
-    l_a = []
-    n_a = int(input())
-    for i in range(n_a):
-        list_a_input = input().split("follows")
-        l_a.extend(list_a_input)
-    print(create_social_network(l_a, n_a))
+    L = []
+    n = int(input())
+    for i in range(n):
+        list_input = input().split("follows")
+        L.extend(list_input)
+    print(create_social_network(L, n))
 main()
