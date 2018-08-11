@@ -1,13 +1,17 @@
+'''
 #Exercise: Assignment-2
-#Implement the updateHand function. Make sure this function has no side effects: i.e., it must not mutate the hand passed in. Before pasting your function definition here, be sure you've passed the appropriate tests in test_ps4a.py.
-
-
+#Implement the updateHand function. Make sure this
+function has no side effects: i.e., it must not mutate the hand
+passed in. Before pasting your function definition here, be sure
+you've passed the appropriate tests in test_ps4a.py.
+'''
+import copy
 def updateHand(hand, word):
     """
     Assumes that 'hand' has all the letters in word.
     In other words, this assumes that however many times
     a letter appears in 'word', 'hand' has at least as
-    many of that letter in it. 
+    many of that letter in it.
 
     Updates the hand: uses up the letters in the given word
     and returns the new hand, without those letters in it.
@@ -18,20 +22,23 @@ def updateHand(hand, word):
     hand: dictionary (string -> int)    
     returns: dictionary (string -> int)
     """
-    # TO DO ... <-- Remove this comment when you code this function
+    temp_hand = copy.deepcopy(hand)
+    for key in word:
+        temp_hand[key] = temp_hand[key] - 1
+    return temp_hand
     
 
 def main():
-	n=input()
-	adict={}
-	for i in range(int(n)):
-		data=input()
-		l=data.split()
-		adict[l[0]]=int(l[1])
-	data1=input()
-	print(updateHand(adict,data1))
-		
+    n = input()
+    adict = {}
+    for i in range(int(n)):
+        data = input()
+        l = data.split()
+        adict[l[0]] = int(l[1])
+    data1 = input()
+    print(updateHand(adict,data1))
+        
 
 
 if __name__== "__main__":
-	main()
+    main()
