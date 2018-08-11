@@ -2,7 +2,7 @@
     Assignment-1 Create Social Network
 '''
 
-def create_social_network(list_a, n):
+def create_social_network(list_a, n_a):
     no_dict = {}
     for i in range(0, len(list_a), 2):
         if list_a[i] not in no_dict:
@@ -45,9 +45,9 @@ def main():
         handling testcase input and printing output
     '''
     L = []
-    n = int(input())
-    for i in range(n):
+    n_a = int(input())
+    for i in range(n_a):
         list_a_input = input().split("follows")
         L.extend(list_a_input)
-    print(create_social_network(L, n))
+    print(create_social_network(L, n_a))
 main()
