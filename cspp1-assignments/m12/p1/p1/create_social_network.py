@@ -46,9 +46,9 @@ def main():
         handl_aing testcase input and printing output
     '''
     l_a = []
-    n_a = int(input())
-    for i in range(n_a):
+    n_b = int(input())
+    for i in range(n_b):
         list_a_input = input().spl_ait("follows")
         l_a.extend(list_a_input)
-    print(create_social_a_network(l_a, n_a))
+    print(create_social_a_network(l_a, n_b))
 main()
