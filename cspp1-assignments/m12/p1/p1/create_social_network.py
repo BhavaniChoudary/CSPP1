@@ -3,6 +3,9 @@
 '''
 
 def create_social_network(list_a, n_a):
+    '''
+    Social network
+    '''
     no_dict = {}
     for i in range(0, len(list_a), 2):
         if list_a[i] not in no_dict:
