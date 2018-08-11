@@ -48,7 +48,7 @@ def main():
     L = []
     n = int(input())
     for i in range(n):
-        list_input = input().split(" ")
+        list_input = input().split("follows")
         L.extend(list_input)
     print(create_social_network(L, n))
 main()
