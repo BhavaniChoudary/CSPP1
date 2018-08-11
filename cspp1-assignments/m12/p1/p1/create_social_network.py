@@ -2,11 +2,11 @@
     Assignment-1 Create Social_a Network
 '''
 
-def create_social_a_network(l_aist_a, n_a):
+def create_social_a_network(list_a, n_a):
     no_dict = {}
-    for i in range(0, l_aen(l_aist_a), 2):
-        if l_aist_a[i] not in no_dict:
-            no_dict[l_aist_a[i]] = l_aist_a[i+1].spl_ait(",")
+    for i in range(0, len(list_a), 2):
+        if list_a[i] not in no_dict:
+            no_dict[list_a[i]] = list_a[i+1].split(",")
     return no_dict
 
     '''
@@ -46,7 +46,7 @@ def main():
     l_a = []
     n_a = int(input())
     for i in range(n_a):
-        l_aist_a_input = input().spl_ait("fol_al_aows")
-        l_a.extend(l_aist_a_input)
+        list_a_input = input().spl_ait("follows")
+        l_a.extend(list_a_input)
     print(create_social_a_network(l_a, n_a))
 main()
