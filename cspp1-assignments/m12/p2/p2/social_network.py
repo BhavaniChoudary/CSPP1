@@ -16,7 +16,7 @@ def follow(network, arg1, arg2):
     no_dict = {}
     for i in range(0, len(network), 2):
         if network[i] not in no_dict:
-            no_dict[network[i]] = network[i+1].split("follow")
+            no_dict[network[i]] = network[i+1].split(",")
     return no_dict
 
 def unfollow(network, arg1, arg2):
