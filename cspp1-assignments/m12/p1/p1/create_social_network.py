@@ -40,7 +40,6 @@ def create_social_network(list_a, n_a):
         Return a empty dictionary if the string format of the data is invalid
         Empty dictionary is not None, it is a dictionary with no keys
     '''
-    # remove the pass below and start writing your code
 def main():
     '''
         handling testcase input and printing output
