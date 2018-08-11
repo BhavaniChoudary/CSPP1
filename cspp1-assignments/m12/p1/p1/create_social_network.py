@@ -3,10 +3,9 @@
 '''
 
 def create_social_network(List, n):
-    for i in range(0, len(List), 2):
     no_dict = {}
-    print(list)
-        if list[i] not in no_dict:
+    for i in range(0, len(List), 2):
+        if List[i] not in no_dict:
             no_dict[List[i]] = List[i+1].split(",")
     return no_dict
 
@@ -49,7 +48,7 @@ def main():
     L = []
     n = int(input())
     for i in range(n):
-        list_input = input().split(" ")
+        list_input = input().split("follows")
         L.extend(list_input)
     print(create_social_network(L, n))
 main()
