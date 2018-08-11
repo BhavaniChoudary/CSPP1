@@ -23,7 +23,7 @@ def get_guessed_word(secret_word, letters_guessed):
             str1 += i
     return str1
 def is_word_guessed(secret_word, letters_guessed):
-    '''is word guessed?''' 
+    '''is word guessed?'''
     secret_set = set(secret_word)
     intersect = secret_set.intersection(set(letters_guessed))
     return bool(len(intersect) == len(secret_set))

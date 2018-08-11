@@ -1,4 +1,4 @@
-#Exercise : how many
+#Exercise : how man
 # write a procedure, called how_many, which returns the sum of the number of values associated with a dictionary.
 
 
