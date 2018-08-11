@@ -45,9 +45,9 @@ def main():
         handling testcase input and printing output
     '''
     l_a = []
-    n = int(input())
-    for i in range(n):
+    n_a = int(input())
+    for i in range(n_a):
         list_a_input = input().split("follows")
         l_a.extend(list_a_input)
-    print(create_social_network(l_a, n))
+    print(create_social_network(l_a, n_a))
 main()
