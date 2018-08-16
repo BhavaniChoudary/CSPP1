@@ -109,24 +109,23 @@ def hand_rank(hand):
     # third would be a straight with the return value 1
     # any other hand would be the fourth best with the return value 0
     # max in poker function uses these return values to select the best hand
-    count_n = 0
     if is_straight(hand) and is_flush(hand):
-        count_n = 8
+        return 8
     if is_four_of_kind(hand):
-        count_n = 7
+        return 7
     if is_full_house(hand):
-        count_n = 6
+        return 6
     if is_flush(hand):
-        count_n = 5
+        return 5
     if is_straight(hand):
-        count_n = 4
+        return 4
     if is_three_of_kind(hand):
-        count_n = 3
+        return 3
     if is_two_pair(hand):
-        count_n = 2
+        return 2
     if is_straight(hand):
-        count_n = 1
-    count_n = 0
+        return 1
+    return 0
 def poker(hands):
     '''
         This function is completed for you. Read it to learn the code.
