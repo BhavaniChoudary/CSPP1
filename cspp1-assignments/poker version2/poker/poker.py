@@ -115,13 +115,13 @@ def hand_rank(hand):
     if is_four_of_kind(hand):
         count_n = 7
     if is_full_house(hand):
-        count_n =  6
+        count_n = 6
     if is_flush(hand):
-        count_n =  5
+        count_n = 5
     if is_straight(hand):
-        count_n =  4
+        count_n = 4
     if is_three_of_kind(hand):
-        count_n =  3
+        count_n = 3
     if is_two_pair(hand):
         count_n = 2
     if is_straight(hand):
