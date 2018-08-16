@@ -15,15 +15,8 @@ def is_straight(hand):
         Think of an algorithm: given the card face value how to check if it a straight
         Write the code for it and return True if it is a straight else return False
     '''
-    lis_new = []
-    for num_h in hand:
-        lis_new.append(DICT[num_h[0]])
-    lis_new.sort()
-    for i in range(len(lis_new)-1):
-        if lis_new[i+1] - lis_new[i] != 1:
-            return False
-    return True
-
+    face_values = [DICT[face] for face, suit_value in hand]
+    return sum(face_values) - min(face_values)*len(face_values) == 10
 
 def is_flush(hand):
     '''
@@ -34,11 +27,7 @@ def is_flush(hand):
         Think of an algorithm: given the card suite how to check if it is a flush
         Write the code for it and return True if it is a flush else return False
     '''
-    suit = hand[0]
-    for num_h in hand:
-        if suit[1] != num_h[1]:
-            return False
-        return True
+    return len(set([suit_value for face, suit_value in hand])) == 1
 
 def hand_rank(hand):
     '''
