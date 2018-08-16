@@ -3,7 +3,8 @@
     Read about poker hands here.
     https://en.wikipedia.org/wiki/List_of_poker_hands
 '''
-Dict = {'A':14, 'K':13, 'Q':12, 'J':11, 'T':10, '9':9, '8':8, '7':7, '6':6, '5':5, '4':4, '3':3, '2':2}
+DICT = {'A':14, 'K':13, 'Q':12, 'J':11, 'T':10, '9':9, '8':8,\
+'7':7, '6':6, '5':5, '4':4, '3':3, '2':2}
 def is_straight(hand):
     '''
         How do we find out if the given hand is a straight?
@@ -16,7 +17,7 @@ def is_straight(hand):
     '''
     lis_new = []
     for num_h in hand:
-        lis_new.append(Dict[num_h[0]])
+        lis_new.append(DICT[num_h[0]])
     lis_new.sort()
     for i in range(len(lis_new)-1):
         if lis_new[i+1] - lis_new[i] != 1:
@@ -37,8 +38,7 @@ def is_flush(hand):
     for num_h in hand:
         if suit[1] != num_h[1]:
             return False
-        else:
-            return True
+        return True
 
 def hand_rank(hand):
     '''
@@ -81,7 +81,6 @@ def hand_rank(hand):
     if is_straight(hand):
         return 5
     return 0
-    
 def poker(hands):
     '''
         This function is completed for you. Read it to learn the code.
