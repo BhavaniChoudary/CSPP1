@@ -121,7 +121,7 @@ def hand_rank(hand):
         return 4
     if is_three_of_kind(hand):
         return 3
-    if is_flush(hand):
+    if is_two_pair(hand):
         return 2
     if is_straight(hand):
         return 1
