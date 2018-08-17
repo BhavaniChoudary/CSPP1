@@ -45,7 +45,7 @@ def create_dictionary(words_list):
                 dictionary[word] += 1
     return dictionary
 
-def clean_given_text(text_input):
+def clean_text(text_input):
     '''
     takes oneing and return list
     '''
@@ -57,8 +57,8 @@ def similarity(text_1, text_2):
     '''
     Compute the document distance as given in the PDF
     '''
-    dictionary_one = create_dictionary(clean_given_text(text_1))
-    dictionary_two = create_dictionary(clean_given_text(text_2))
+    dictionary_one = create_dictionary(clean_text(text_1))
+    dictionary_two = create_dictionary(clean_text(text_2))
     dictionary = combine_dictionaries(dictionary_one, dictionary_two)
     return calculate_similarity(dictionary)
 
