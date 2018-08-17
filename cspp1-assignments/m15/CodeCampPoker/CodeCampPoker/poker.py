@@ -5,6 +5,62 @@
 '''
 DICT = {'A':14, 'K':13, 'Q':12, 'J':11, 'T':10, '9':9, '8':8,\
 '7':7, '6':6, '5':5, '4':4, '3':3, '2':2}
+def get_face_values(hand):
+    '''
+    face_values
+    '''
+    face_values = [DICT[f] for f, suit_value in hand]
+    return face_values
+
+def get_suit_values(hand):
+    '''
+    suit_values
+    '''
+    suit_value = [s for f, s in hand]
+    return suit_value
+
+def is_four_of_kind(hand):
+    '''
+    four of kind
+    '''
+    face_values = get_face_values(hand)
+    face_values.sort()
+    return len(set(face_values[:-1])) == 1 or len(set(face_values[-4:])) == 1
+
+def is_three_of_kind(hand):
+    '''
+    three of kind
+    '''
+    face_values = get_face_values(hand)
+    face_values.sort()
+    return len(set(face_values)) == 3
+
+def is_one_pair(hand):
+    '''
+    is one pair
+    '''
+    face_values = get_face_values(hand)
+    face_values.sort()
+    return len(set(face_values)) == 4
+
+def is_two_pair(hand):
+    '''
+    is two pair
+    '''
+    face_values = get_face_values(hand)
+    face_values.sort()
+    return len(set(face_values)) == 3 and len(set(face_values[:2])) == 1\
+    or len(set(face_values[2:4])) == 1
+
+def is_full_house(hand):
+    '''
+    full house
+    '''
+    face_values = get_face_values(hand)
+    face_values.sort()
+    return len(set(face_values)) == 2
+
+
 def is_straight(hand):
     '''
         How do we find out if the given hand is a straight?
@@ -27,7 +83,7 @@ def is_flush(hand):
         Think of an algorithm: given the card suite how to check if it is a flush
         Write the code for it and return True if it is a flush else return False
     '''
-    return len(set(suit_value for face, suit_value in hand)) == 1
+    return len(set(s for f, s in hand)) == 1
 
 def hand_rank(hand):
     '''
@@ -54,8 +110,18 @@ def hand_rank(hand):
     # any other hand would be the fourth best with the return value 0
     # max in poker function uses these return values to select the best hand
     if is_straight(hand) and is_flush(hand):
-        return 3
+        return 8
+    if is_four_of_kind(hand):
+        return 7
+    if is_full_house(hand):
+        return 6
     if is_flush(hand):
+        return 5
+    if is_straight(hand):
+        return 4
+    if is_three_of_kind(hand):
+        return 3
+    if is_two_pair(hand):
         return 2
     if is_straight(hand):
         return 1
