@@ -27,9 +27,9 @@ def is_two_pair(ranks):
     return two is_two_pair
     '''
     pair = kind(2, ranks)
-    lowpair = kind(2, list(reversed(ranks)))
-    if pair and lowpair != pair:
-        return (pair, lowpair)
+    lowpair_a = kind(2, list(reversed(ranks)))
+    if pair and lowpair_a != pair:
+        return (pair, lowpair_a)
     return None
 
 def is_straight(ranks):
