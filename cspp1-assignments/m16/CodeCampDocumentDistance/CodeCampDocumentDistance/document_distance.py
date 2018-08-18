@@ -1,11 +1,12 @@
 '''
     Document Distance - A detailed description is given in the PDF
+    @author : BhavaniChoudary
 '''
 import re
 import math
 def combine_dictionaries(dictionary_one, dictionary_two):
     '''
-    two dictionaries are combined
+    combining two dictionaries
     '''
     dictionary = {}
 
@@ -24,7 +25,7 @@ def combine_dictionaries(dictionary_one, dictionary_two):
 
 def calculate_similarity(dictionary_values):
     '''
-    calculating frequency
+    calculate frequency
     '''
     numerator = sum([k[0] * k[1] for k in dictionary_values.values()])
     d1_a = math.sqrt(sum([k[0] ** 2 for k in dictionary_values.values()]))
@@ -32,7 +33,7 @@ def calculate_similarity(dictionary_values):
     return numerator/(d1_a*d2_a)
 def create_dictionary(words_list):
     '''
-    returns dictionary, takes input as word list
+    returns dictionary
     '''
     dictionary = {}
     stopwords = load_stopwords("stopwords.txt")
