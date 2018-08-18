@@ -60,11 +60,7 @@ def build_search_index(docs):
         # add or update the words of the doc to the search index
 
     # return search index
-    dictionary = {}
-
-    for word in dictionary_one:
-        if word in dictionary_two:
-            dictionary[word] = [dictionary_one[word], dictionary_two[word]]
+    #dictionary = {}
 
 
 
