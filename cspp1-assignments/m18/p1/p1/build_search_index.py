@@ -33,13 +33,13 @@ def load_stopwords(filename):
     return stopwords
 
 
-def word_list(text_input):
+def word_list(text):
     '''
         Change case to lower and split the words using a SPACE
         Clean up the text by remvoing all the non alphabet characters
         return a list of words
     '''
-    words = text_input.lower().strip().replace('\'', '')
+    words = text.lower().strip().replace('\'', '')
     regex = re.compile('[^a-z]')
     words = regex.sub(" ", words).split(" ")
     return words
