@@ -13,12 +13,12 @@ def card_ranks(cards):
     ranks.sort(reverse=True)
     return ranks
 
-def kind(count_a, ranks):
+def kind(count, ranks):
     '''
     Return all three kind, four kind, one pair.
     '''
     for rank in ranks:
-        if ranks.count_a(rank) == count_a:
+        if ranks.count(rank) == count:
             return rank
     return None
 
@@ -122,10 +122,10 @@ def poker(hands):
 
 if __name__ == "__main__":
     # read the number of test cases
-    count_a = int(input())
+    COUNT = int(input())
     # iterate through the test cases to set up hands list
     HANDS = []
-    for x in range(count_a):
+    for x in range(COUNT):
         line = input()
         hand_list = line.split(" ")
         HANDS.append(hand_list)
