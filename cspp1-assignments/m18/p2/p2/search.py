@@ -28,7 +28,7 @@
 
     Note: PyLint score need not be 10/10. Anything above 9.5 is good.
 '''
-def search(search_index, query):
+    def search(search_index, query):
     '''
         function to search through the search index and return the results
         split the query into lowercase words
@@ -60,7 +60,7 @@ def main():
         main function
     '''
     # This line loads the search index
-    search_index = eval(input())
+    search_index = (input())
     # read the number of search queries
     lines = int(input())
     # read the search queries into a list
