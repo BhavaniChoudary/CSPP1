@@ -33,7 +33,7 @@ def load_stopwords(filename):
     return stopwords
 
 
-def word_list(text):
+def w_list(text):
     '''
         Change case to lower and split the words using a SPACE
         Clean up the text by remvoing all the non alphabet characters
@@ -62,14 +62,14 @@ def build_search_index(docs):
 
     # return search index
     dictionary_one = {}
-    word_one = []
+    w_one = []
     for line in docs:
-        word_one.append(word_list(line))
-    for w_m in word_one:
+        w_one.append(w_list(line))
+    for w_m in w_one:
         for word in w_m:
             if word not in dictionary_one.keys():
-                dictionary_one[word] = [(i_, word_.count(word))\
-                for i_, word_ in enumerate(word_one) if word in word_]
+                dictionary_one[word] = [(i_, w_.count(word))\
+                for i_, w_ in enumerate(w_one) if word in w_]
     return dictionary_one
 # helper function to print the search index
 # use this to verify how the search index looks
