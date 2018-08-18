@@ -39,7 +39,7 @@ def word_list(text):
         Clean up the text by remvoing all the non alphabet characters
         return a list of words
     '''
-    words = text_input.lower()
+    words = text_input.lower().strip().replace('\'', '')
     regex = re.compile('[^a-z]')
     words = regex.sub(" ", words).split(" ")
     return words
@@ -63,8 +63,9 @@ def build_search_index(docs):
     dictionary = {}
 
     for word in dictionary_one:
-    	if word in dictionary_two:
-    		dictionary[word] = [dictionary_one[word], dictionary_two[word]]
+        if word in dictionary_two:
+            dictionary[word] = [dictionary_one[word], dictionary_two[word]]
+
 
 
 
