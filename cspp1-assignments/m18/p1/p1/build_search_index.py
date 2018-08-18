@@ -40,10 +40,10 @@ def word_list(text):
         return a list of words
     '''
     regex = re.compile('[^a-z]')
-    w = [regex.sub("",w.strip()) for w in text.lower().split(" ")]
+    w_m = [regex.sub("",w_m.strip()) for w_m in text.lower().split(" ")]
     stop_words = load_stopwords("stopwords.txt")
-    w = [i for i in w if i not in stop_words]
-    return w
+    w_m = [i for i in w if i not in stop_words]
+    return w_m
 
 def build_search_index(docs):
     '''
