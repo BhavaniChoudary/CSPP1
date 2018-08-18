@@ -61,16 +61,16 @@ def build_search_index(docs):
         # add or update the words of the doc to the search index
 
     # return search index
-    dictionary_1 = {}
-    word_1 = []
+    dictionary_one = {}
+    word_one = []
     for line in docs:
-        word_1.append(word_list(line))
-    for w in word_1:
+        word_one.append(word_list(line))
+    for w in word_one:
         for word in w:
-            if word not in dictionary_1.keys():
-                dictionary_1[word] = [(i_, word_.count(word))\
-                for i_, word_ in enumerate(word_1) if word in word_]
-    return dictionary_1
+            if word not in dictionary_one.keys():
+                dictionary_one[word] = [(i_, word_.count(word))\
+                for i_, word_ in enumerate(word_one) if word in word_]
+    return dictionary_one
 # helper function to print the search index
 # use this to verify how the search index looks
 def print_search_index(index):
