@@ -40,7 +40,7 @@ def word_list(text):
         return a list of words
     '''
     regex = re.compile('[^a-z]')
-    w_m = [regex.sub("",w_m.strip()) for w_m in text.lower().split(" ")]
+    w_m = [regex.sub(" ",w_m.strip()) for w_m in text.lower().split(" ")]
     stop_words = load_stopwords("stopwords.txt")
     w_m = [i for i in w_m if i not in stop_words]
     return w_m
