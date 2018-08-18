@@ -64,7 +64,8 @@ def build_search_index(docs):
 
     for word in dictionary_one:
     	if word in dictionary_two:
-    		dictionary 
+    		dictionary[word] = [dictionary_one[word], dictionary_two[word]]
+
 
 
 
