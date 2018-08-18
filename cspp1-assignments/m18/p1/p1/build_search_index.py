@@ -42,7 +42,7 @@ def word_list(text):
     regex = re.compile('[^a-z]')
     w_m = [regex.sub("",w_m.strip()) for w_m in text.lower().split(" ")]
     stop_words = load_stopwords("stopwords.txt")
-    w_m = [i for i in w if i not in stop_words]
+    w_m = [i for i in w_m if i not in stop_words]
     return w_m
 
 def build_search_index(docs):
@@ -65,8 +65,8 @@ def build_search_index(docs):
     word_one = []
     for line in docs:
         word_one.append(word_list(line))
-    for w in word_one:
-        for word in w:
+    for w_m in word_one:
+        for word in w_m:
             if word not in dictionary_one.keys():
                 dictionary_one[word] = [(i_, word_.count(word))\
                 for i_, word_ in enumerate(word_one) if word in word_]
