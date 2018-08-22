@@ -92,6 +92,7 @@ class Message(object):
                     new_msg.append(i)
                 else:
                     new_msg.append(self.build_shift_dict(shift)[i])
+                    continue
                 return ''.join(new_msg)
 
 
