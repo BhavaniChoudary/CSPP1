@@ -85,6 +85,7 @@ class Message(object):
         total_keys = lower_keys + upper_keys
         total_values = shift_lower_values + shift_upper_values
         return self.shift_dict
+        self.shift_dict = dict(zip(total_keys, total_values))
         def apply_shift(self, shift):
             new_msg = []
             for i in message_text:
