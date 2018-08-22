@@ -66,7 +66,7 @@ WORDLIST_FILENAME = 'words.txt'
 
 
 ### Paste your implementation of the Message class here
-class Message(object):
+class Message():
     '''
     message
     '''
@@ -119,8 +119,6 @@ class Message(object):
 
     # def get_message_text(self):
     #     return self.
-        
-
 def main():
     '''
         Function to handle testcases
