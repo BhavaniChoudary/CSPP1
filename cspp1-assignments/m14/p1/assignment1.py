@@ -77,7 +77,7 @@ class Message(object):
         return self.valid_words
     def build_shift_dict(self, shift):
         lower_keys = list(string.ascii_lowercase)
-        lower_values = list(string.ascii_uppercase)
+        lower_values = list(string.ascii_lowercase)
         shift_lower_values = lower_values[shift:] + lower_values[:shift]
         upper_keys = list(string.ascii_uppercase)
         upper_values = list(string.ascii_uppercase)
