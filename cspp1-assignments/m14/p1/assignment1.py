@@ -74,7 +74,7 @@ class Message(object):
     def get_message_text(self):
         return self.message_text
     def get_valid_words(self):
-        return self.valid_words
+        return self.valid_words[:]
     def build_shift_dict(self, shift):
         lower_keys = list(string.ascii_lowercase)
         lower_values = list(string.ascii_lowercase)
