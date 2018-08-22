@@ -91,9 +91,9 @@ class Message(object):
         for i in self.message_text:
             if i not in self.build_shift_dict(shift).keys():
                 new_msg.append(i)
+                continue
             else:
                 new_msg.append(self.build_shift_dict(shift)[i])
-                continue
         return ''.join(new_msg)
 
 
