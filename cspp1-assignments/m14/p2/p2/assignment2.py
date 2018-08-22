@@ -126,7 +126,6 @@ class Message():
                 new_msg.append(self.build_shift_dict(shift)[i])
         return ''.join(new_msg)
 
-### Helper code End
 class PlaintextMessage(Message):
     ''' PlaintextMessage class '''
     ### DO NOT MODIFY THIS METHOD ###
@@ -147,6 +146,7 @@ class PlaintextMessage(Message):
         Hint: consider using the parent class constructor so less
         code is repeated
         '''
+        Message.__init__(self, text)
         self.text = text
         self.shift = shift
         self.valid_words = load_words("words.txt")
