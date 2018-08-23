@@ -51,7 +51,7 @@ def read_matrix():
     list_input = []
     list_matrix = input().split(",")
     rows, columns = int(list_matrix[0]), int(list_matrix[1])
-    for i in range(int(list_matrix[0])):
+    for _ in range(int(list_matrix[0])):
         li_matrix = input().split()
         if columns == len(li_matrix):
             list_input.append([int(i) for i in li_matrix])
