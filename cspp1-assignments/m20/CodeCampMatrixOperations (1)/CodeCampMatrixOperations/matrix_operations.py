@@ -1,5 +1,5 @@
 '''
-matrix operations
+docstring
 '''
 def mult_matrix(matrix_one, matrix_two):
     '''
@@ -12,6 +12,7 @@ def mult_matrix(matrix_one, matrix_two):
     if len(matrix_one) != len(matrix_two[0]):
         print("Error: Matrix shapes invalid for mult")
         return
+     
     grid = [[0 for i in enumerate(matrix_one)] for j in enumerate(matrix_two[0])]
     for i in range(len(matrix_one)):
         for j in range(len(matrix_two[0])):
@@ -38,7 +39,6 @@ def add_matrix(matrix_one, matrix_two):
     else:
         print("Error: Matrix shapes invalid for addition")
         return None
-
 def read_matrix():
     '''
     read the matrix dimensions from input
@@ -48,9 +48,9 @@ def read_matrix():
     error message should be "Error: Invalid input for the matrix"
     '''
     list_input = []
-    list_matrix = input().split(",")
-    rows, columns = int(list_matrix[0]), int(list_matrix[1])
-    for _ in range(int(list_matrix[0])):
+    list_length = input().split(",")
+    rows, columns = int(list_length[0]), int(list_length[1])
+    for i in range(int(list_length[0])):
         li_matrix = input().split()
         if columns == len(li_matrix):
             list_input.append([int(i) for i in li_matrix])
@@ -60,15 +60,15 @@ def read_matrix():
     return list_input
 
 def main():
-	read_matrix_one = read_matrix()
-    if read_matrix_one is None:
+    read_m = read_matrix()
+    if read_m is None:
         exit()
-    read2_matrix_two = read_matrix()
-    if read2_matrix_two is None:
+    read2_m = read_matrix()
+    if read2_m is None:
         exit()
 
-    print(add_matrix(read_matrix_one, read2_matrix_two))
-    print(mult_matrix(read_matrix_one, read2_matrix_two))
+    print(add_matrix(read_m, read2_m))
+    print(mult_matrix(read_m, read2_m))
 
 if __name__ == '__main__':
     main()
