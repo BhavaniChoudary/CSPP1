@@ -12,7 +12,6 @@ def mult_matrix(matrix_one, matrix_two):
     if len(matrix_one) != len(matrix_two[0]):
         print("Error: Matrix shapes invalid for mult")
         return
-     
     grid = [[0 for i in enumerate(matrix_one)] for j in enumerate(matrix_two[0])]
     for i in range(len(matrix_one)):
         for j in range(len(matrix_two[0])):
@@ -61,6 +60,9 @@ def read_matrix():
     return list_input
 
 def main():
+	'''
+	Main function
+	'''
     read_matrix_one = read_matrix()
     if read_matrix_one is None:
         exit()
