@@ -40,11 +40,11 @@ def read_matrix():
 
 def main():
     # read matrix 1
-    matrix_one = read_matrix()
+    #matrix_one = read_matrix()
     # read matrix 2
-    matrix_two = read_matrix()
+    #matrix_two = read_matrix()
     # add matrix 1 and matrix 2
-    
+
     # multiply matrix 1 and matrix 2
     pass
 
