@@ -60,10 +60,7 @@ def read_matrix():
     return list_input
 
 def main():
-	'''
-	Main function
-	'''
-    read_matrix_one = read_matrix()
+	read_matrix_one = read_matrix()
     if read_matrix_one is None:
         exit()
     read2_matrix_two = read_matrix()
