@@ -1,3 +1,6 @@
+'''
+matrix_operations
+'''
 def mult_matrix(m1, m2):
     '''
         check if the matrix1 columns = matrix2 rows
@@ -16,7 +19,7 @@ def add_matrix(m1, m2):
         and return None
         error message should be "Error: Matrix shapes invalid for addition"
     '''
-    pass
+
 
 def read_matrix():
     '''
@@ -40,11 +43,11 @@ def read_matrix():
 
 def main():
     # read matrix 1
-    #matrix_one = read_matrix()
+    matrix_one = read_matrix()
     # read matrix 2
-    #matrix_two = read_matrix()
+    matrix_two = read_matrix()
     # add matrix 1 and matrix 2
-
+    
     # multiply matrix 1 and matrix 2
     pass
 
