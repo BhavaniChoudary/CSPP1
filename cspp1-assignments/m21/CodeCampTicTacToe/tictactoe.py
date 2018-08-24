@@ -28,4 +28,6 @@ def main():
 
     if valid_grid is True:
         winner = horizontal_check(grid)
-        
+    if winner is None:
+            winner = verical_check(grid)
+        if winner is None:   
