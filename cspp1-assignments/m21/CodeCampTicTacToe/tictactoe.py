@@ -4,7 +4,7 @@ Tic-Tac-Toe
 
 def horizontal_m(grid):
     '''
-        Checks if winner is in horizontal row
+        checks horizontal row
     '''
     if grid[0][0] == grid[0][1] == grid[0][2]:
         return grid[0][0]
@@ -15,7 +15,7 @@ def horizontal_m(grid):
 
 def vertical_m(grid):
     '''
-        Checks if winner is in vertical row
+        Checks vertical row
     '''
     if grid[0][0] == grid[1][0] == grid[2][0]:
         return grid[0][0]
@@ -26,7 +26,7 @@ def vertical_m(grid):
 
 def diagonal_m(grid):
     '''
-        Checks if winner is in diagonal row
+        Checks diagonal row
     '''
     if grid[0][0] == grid[1][1] == grid[2][2]:
         return grid[0][0]
