@@ -32,6 +32,18 @@ def diagonal_m(grid):
     if grid[0][2] == grid[1][1] == grid[2][0]:
         return grid[0][2]
 
+def is_valid_grid(grid):
+    '''
+        Checks if the grid is valid
+    '''
+    for inputs in grid:
+        for j in inputs:
+            if j in ('x', 'o', '.'):
+                pass
+            else:
+                return False
+    return True
+
 
 def main():
     '''
