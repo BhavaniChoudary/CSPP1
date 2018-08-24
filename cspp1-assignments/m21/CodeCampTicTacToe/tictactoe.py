@@ -20,6 +20,15 @@ def verical_check(grid):
     if grid[0][2] == grid[1][2] == grid[2][2]:
         return grid[0][2]
 
+def diagonal_check(grid):
+    '''
+        Checks if winner is in diagonal row
+    '''
+    if grid[0][0] == grid[1][1] == grid[2][2]:
+        return grid[0][0]
+    if grid[0][2] == grid[1][1] == grid[2][0]:
+        return grid[0][2]
+
 
 def main():
     '''
