@@ -31,6 +31,7 @@ def diagonal_m(grid):
     '''
         Checks if winner is in diagonal row
     '''
+    a_a = ''
     if grid[0][0] == grid[1][1] == grid[2][2]:
         a_a = grid[0][0]
     if grid[0][2] == grid[1][1] == grid[2][0]:
