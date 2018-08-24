@@ -1,7 +1,7 @@
 '''
 Tic-Tac_Toe
 '''
-def horizontal_check(grid):
+def horizontal_m(grid):
     '''
         Checks if winner is in horizontal row
     '''
@@ -12,7 +12,7 @@ def horizontal_check(grid):
     if grid[2][0] == grid[2][1] == grid[2][2]:
         return grid[2][0]
 
-def verical_check(grid):
+def vertical_m(grid):
     '''
         Checks if winner is in vertical row
     '''
@@ -23,7 +23,7 @@ def verical_check(grid):
     if grid[0][2] == grid[1][2] == grid[2][2]:
         return grid[0][2]
 
-def diagonal_check(grid):
+def diagonal_m(grid):
     '''
         Checks if winner is in diagonal row
     '''
@@ -39,7 +39,10 @@ def main():
     '''
 
     if valid_grid is True:
-        winner = horizontal_check(grid)
+        winner = horizontal_m(grid)
     if winner is None:
-            winner = verical_check(grid)
-        if winner is None:   
+            winner = vertical_m(grid)
+        if winner is None:
+        	winner = diagonal_check(grid)
+        if winner is None:
+            print("draw")
