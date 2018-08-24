@@ -1,6 +1,5 @@
 '''
-    This is program to determine the winner
-    of Tic-Tac-Toe
+Tic-Tac-Toe
 '''
 
 def horizontal_m(grid):
