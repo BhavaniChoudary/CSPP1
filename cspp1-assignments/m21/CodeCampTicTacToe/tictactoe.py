@@ -33,9 +33,9 @@ def diagonal_m(grid):
     '''
     a_a = ""
     if grid[0][0] == grid[1][1] == grid[2][2]:
-        a_a = grid[0][0]
+        a_a += grid[0][0]
     if grid[0][2] == grid[1][1] == grid[2][0]:
-        a_a = grid[0][2]
+        a_a += grid[0][2]
     return a_a
 
 def is_valid_grid(grid):
