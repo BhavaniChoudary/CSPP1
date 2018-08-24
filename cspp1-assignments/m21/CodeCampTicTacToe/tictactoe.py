@@ -24,6 +24,7 @@ def verical_m(grid):
     if grid[0][1] == grid[1][1] == grid[2][1]:
         a_a += grid[0][1]
     if grid[0][2] == grid[1][2] == grid[2][2]:
+        print("IKKadikio ochesa")
         a_a += grid[0][2]
     return a_a
 
