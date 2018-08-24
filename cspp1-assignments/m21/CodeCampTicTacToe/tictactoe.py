@@ -1,6 +1,8 @@
 '''
-Tic-Tac_Toe
+    This is program to determine the winner
+    of Tic-Tac-Toe
 '''
+
 def horizontal_m(grid):
     '''
         Checks if winner is in horizontal row
@@ -12,7 +14,7 @@ def horizontal_m(grid):
     if grid[2][0] == grid[2][1] == grid[2][2]:
         return grid[2][0]
 
-def vertical_m(grid):
+def verical_m(grid):
     '''
         Checks if winner is in vertical row
     '''
@@ -64,18 +66,25 @@ def is_valid_game(grid):
     elif abs(count_x - count_o == 0) and count_dot > 0:
         return False
     return True
-
 def main():
     '''
         This is main function
     '''
-
+    winner = None
+    grid = []
+    for _ in range(0, 3, 1):
+        values = input().split(' ')
+        temp = []
+        for j in values:
+            temp.append(j)
+        grid.append(temp)
+    valid_grid = is_valid_grid(grid) and is_valid_game(grid)
     if valid_grid is True:
         winner = horizontal_m(grid)
-    if winner is None:
-            winner = vertical_m(grid)
         if winner is None:
-        	winner = diagonal_check(grid)
+            winner = verical_m(grid)
+        if winner is None:
+            winner = diagonal_m(grid)
         if winner is None:
             print("draw")
         else:
@@ -85,4 +94,6 @@ def main():
             print("invalid input")
         if  not is_valid_game(grid):
             print("invalid game")
-main()
+
+if __name__ == '__main__':
+    main()
