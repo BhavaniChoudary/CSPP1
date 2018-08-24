@@ -8,11 +8,11 @@ def horizontal_m(grid):
     '''
     a_a = ''
     if grid[0][0] == grid[0][1] == grid[0][2]:
-        a_a = grid[0][0]
+        a_a += grid[0][0]
     if grid[1][0] == grid[1][1] == grid[1][2]:
-        a_a = grid[1][0]
+        a_a += grid[1][0]
     if grid[2][0] == grid[2][1] == grid[2][2]:
-        a_a = grid[2][0]
+        a_a += grid[2][0]
     return a_a
 def verical_m(grid):
     '''
