@@ -1,6 +1,5 @@
 '''
-    This is program to determine the winner
-    of Tic-Tac-Toe
+Tic-Tac-Toe
 '''
 
 def horizontal_m(grid):
@@ -8,31 +7,33 @@ def horizontal_m(grid):
         Checks if winner is in horizontal row
     '''
     if grid[0][0] == grid[0][1] == grid[0][2]:
-        return grid[0][0]
+        a_a = grid[0][0]
     if grid[1][0] == grid[1][1] == grid[1][2]:
-        return grid[1][0]
+        a_a = grid[1][0]
     if grid[2][0] == grid[2][1] == grid[2][2]:
-        return grid[2][0]
-
+        a_a = grid[2][0]
+    return a_a
 def verical_m(grid):
     '''
         Checks if winner is in vertical row
     '''
     if grid[0][0] == grid[1][0] == grid[2][0]:
-        return grid[0][0]
+        a_a = grid[0][0]
     if grid[0][1] == grid[1][1] == grid[2][1]:
-        return grid[0][1]
+        a_a = grid[0][1]
     if grid[0][2] == grid[1][2] == grid[2][2]:
-        return grid[0][2]
+        a_a = grid[0][2]
+    return a_a
 
 def diagonal_m(grid):
     '''
         Checks if winner is in diagonal row
     '''
     if grid[0][0] == grid[1][1] == grid[2][2]:
-        return grid[0][0]
+        a_a = grid[0][0]
     if grid[0][2] == grid[1][1] == grid[2][0]:
-        return grid[0][2]
+        a_a = grid[0][2]
+    return a_a
 
 def is_valid_grid(grid):
     '''
