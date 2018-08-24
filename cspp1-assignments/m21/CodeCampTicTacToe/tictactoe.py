@@ -44,6 +44,26 @@ def is_valid_grid(grid):
                 return False
     return True
 
+def is_valid_game(grid):
+    '''
+        Checks if game is valid
+    '''
+    count_x = 0
+    count_o = 0
+    count_dot = 0
+    for inputs in grid:
+        for j in inputs:
+            if j == 'x':
+                count_x += 1
+            elif j == 'o':
+                count_o += 1
+            elif j == '.':
+                count_dot += 1
+    if abs(count_x - count_o >= 2):
+        return False
+    elif abs(count_x - count_o == 0) and count_dot > 0:
+        return False
+
 
 def main():
     '''
