@@ -1,3 +1,5 @@
+def input_validation():
+	
 def read_input():
 	list_input = []
 	for _ in range(3):
@@ -6,4 +8,4 @@ def read_input():
 	return list_input
 
 def main():
-
+	
