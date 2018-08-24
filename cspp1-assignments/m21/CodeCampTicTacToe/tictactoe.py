@@ -6,7 +6,7 @@ def horizontal_m(grid):
     '''
         Checks if winner is in horizontal row
     '''
-    a_a = ''
+    a_a = ""
     if grid[0][0] == grid[0][1] == grid[0][2]:
         a_a += grid[0][0]
     if grid[1][0] == grid[1][1] == grid[1][2]:
@@ -18,20 +18,20 @@ def verical_m(grid):
     '''
         Checks if winner is in vertical row
     '''
-    a_a = ''
+    a_a = ""
     if grid[0][0] == grid[1][0] == grid[2][0]:
-        a_a = grid[0][0]
+        a_a += grid[0][0]
     if grid[0][1] == grid[1][1] == grid[2][1]:
-        a_a = grid[0][1]
+        a_a += grid[0][1]
     if grid[0][2] == grid[1][2] == grid[2][2]:
-        a_a = grid[0][2]
+        a_a += grid[0][2]
     return a_a
 
 def diagonal_m(grid):
     '''
         Checks if winner is in diagonal row
     '''
-    a_a = ''
+    a_a = ""
     if grid[0][0] == grid[1][1] == grid[2][2]:
         a_a = grid[0][0]
     if grid[0][2] == grid[1][1] == grid[2][0]:
