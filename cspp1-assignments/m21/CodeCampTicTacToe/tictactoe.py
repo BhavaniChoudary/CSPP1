@@ -1,4 +1,4 @@
-def read_input:
+def read_input():
 	list_input = []
 	for _ in range(3):
 		list_length = input.split(" ")
@@ -6,4 +6,4 @@ def read_input:
 	return list_input
 
 def main():
-	
+
