@@ -58,3 +58,10 @@ def main():
         	winner = diagonal_check(grid)
         if winner is None:
             print("draw")
+        else:
+            print(winner)
+    else:
+        if not is_valid_grid(grid):
+            print("invalid input")
+        if  not is_valid_game(grid):
+            print("invalid game")
