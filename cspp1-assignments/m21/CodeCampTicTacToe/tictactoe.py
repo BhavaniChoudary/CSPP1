@@ -63,7 +63,7 @@ def is_valid_game(grid):
         return False
     elif abs(count_x - count_o == 0) and count_dot > 0:
         return False
-
+    return True
 
 def main():
     '''
@@ -85,3 +85,4 @@ def main():
             print("invalid input")
         if  not is_valid_game(grid):
             print("invalid game")
+main()
