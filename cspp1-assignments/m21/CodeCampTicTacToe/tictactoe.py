@@ -25,7 +25,7 @@ def vertical_m(grid):
     if grid[0][2] == grid[1][2] == grid[2][2]:
         return grid[0][2]
 
-def diagonal_check(grid):
+def diagonal_m(grid):
     '''
         Checks if winner is in diagonal row
     '''
@@ -84,7 +84,7 @@ def main():
         if winner is None:
             winner = vertical_m(grid)
         if winner is None:
-            winner = diagonal_check(grid)
+            winner = diagonal_m(grid)
         if winner is None:
             print("draw")
         else:
