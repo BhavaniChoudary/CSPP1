@@ -1,43 +1,38 @@
 '''
-Tic-Tac-Toe
+    This is program to determine the winner
+    of Tic-Tac-Toe
 '''
 
 def horizontal_m(grid):
     '''
         Checks if winner is in horizontal row
     '''
-    a_a = ""
     if grid[0][0] == grid[0][1] == grid[0][2]:
-        a_a += grid[0][0]
+        return grid[0][0]
     if grid[1][0] == grid[1][1] == grid[1][2]:
-        a_a += grid[1][0]
+        return grid[1][0]
     if grid[2][0] == grid[2][1] == grid[2][2]:
-        a_a += grid[2][0]
-    return a_a
-def verical_m(grid):
+        return grid[2][0]
+
+def vertical_m(grid):
     '''
         Checks if winner is in vertical row
     '''
-    a_a = ""
     if grid[0][0] == grid[1][0] == grid[2][0]:
-        a_a += grid[0][0]
+        return grid[0][0]
     if grid[0][1] == grid[1][1] == grid[2][1]:
-        a_a += grid[0][1]
+        return grid[0][1]
     if grid[0][2] == grid[1][2] == grid[2][2]:
-        print("IKKadikio ochesa")
-        a_a += grid[0][2]
-    return a_a
+        return grid[0][2]
 
-def diagonal_m(grid):
+def diagonal_check(grid):
     '''
         Checks if winner is in diagonal row
     '''
-    a_a = ""
     if grid[0][0] == grid[1][1] == grid[2][2]:
-        a_a += grid[0][0]
+        return grid[0][0]
     if grid[0][2] == grid[1][1] == grid[2][0]:
-        a_a += grid[0][2]
-    return a_a
+        return grid[0][2]
 
 def is_valid_grid(grid):
     '''
@@ -87,9 +82,9 @@ def main():
     if valid_grid is True:
         winner = horizontal_m(grid)
         if winner is None:
-            winner = verical_m(grid)
+            winner = vertical_m(grid)
         if winner is None:
-            winner = diagonal_m(grid)
+            winner = diagonal_check(grid)
         if winner is None:
             print("draw")
         else:
