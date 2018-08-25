@@ -5,11 +5,11 @@ each word
 
 def tokenize(string):
     dict_n = {}
-    for i in range(0, len(list_a), 2):
+    for _ in range(0, len(list_a), 2):
         if list_a[i] not in dict_n:
             dict_n[list_a[i]] = list_a[i+1].split(",")
     return dict_n
-            
+
 def main():
     L = []
     n = int(input())
