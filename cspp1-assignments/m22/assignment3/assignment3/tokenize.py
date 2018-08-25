@@ -1,28 +1,30 @@
-'''
-Write a function to tokenize a given string and return a dictionary with the frequency of
-each word
-'''
+def tokenize(string, my_dict):
+    """
+    This functions takes a string as input and cleans it without special charecters and
+    returns a dictionary with freqncy of words
+    """
+    # global my_dict
+    for each_word in string:
+        if each_word in my_dict:
+            my_dict[each_word] += 1
+        elif each_word not in my_dict:
+            my_dict[each_word] = 1
+    return my_dict
 
-def tokenize(string):
-    '''
-    Tokenize
-    '''
-    dict_n = {}
-    for i in enumerate(0, len(string)):
-        if string[i] not in dict_n:
-            dict_n[string[i]] = string[i+1].split(",")
-    return dict_n
 
 def main():
-    '''
-    Main function
-    '''
-    l_n = []
-    n_n = int(input())
-    for _ in range(n_n):
-        string_input = input().split(" ")
-        l_n.extend(string_input)
-    print(tokenize(l_n))
+    """
+    main function
+    """
+    my_dict = {}
+    no_of_lines = int(input())
+    while no_of_lines:
+        read_line = input()
+        my_string = re.sub("[^ 0-9A-Za-z]", "", read_line)
+        my_ans = tokenize(my_string.split(), my_dict)
+        no_of_lines -= 1
+    print(my_ans)
+
 
 if __name__ == '__main__':
     main()
