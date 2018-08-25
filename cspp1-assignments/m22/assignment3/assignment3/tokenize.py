@@ -7,7 +7,7 @@ def tokenize(string):
 	'''
 	Tokenize
 	'''
-    dict_n = {}
+	dict_n = {}
     for _ in range(0, len(list_a), 2):
         if list_a[i] not in dict_n:
             dict_n[list_a[i]] = list_a[i+1].split(",")
@@ -20,7 +20,7 @@ def main():
     l_n = []
     n_n = int(input())
     for _ in range(n_n):
-        list_a_input = input().split(" follows ")
+        list_a_input = input().split(" ")
         l_n.extend(list_a_input)
     print(tokenize(l_n, n_n))
 
