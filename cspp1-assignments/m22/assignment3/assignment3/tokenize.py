@@ -9,7 +9,7 @@ def tokenize(string):
     '''
     a_b = []
     a_c = []
-    dic_t = {}
+    dictionary_new = {}
     for word in string:
         a_d = (re.sub(r'[^\w\s]', '', word))
         a_b.append(a_d)
@@ -17,10 +17,10 @@ def tokenize(string):
         a_c.append(l.split())
     for a in a_c:
         for words in a:
-            if words not in dic_t.keys():
-                dic_t[words] = 0
-            dic_t[words] += 1
-    return dic_t
+            if words not in dictionary_new.keys():
+                dictionary_new[words] = 0
+            dictionary_new[words] += 1
+    return dictionary_new
 def main():
     '''
     main function
