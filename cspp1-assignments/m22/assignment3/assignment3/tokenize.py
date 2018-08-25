@@ -13,7 +13,7 @@ def tokenize(string):
 def main():
     L_n = []
     n_n = int(input())
-    for i in range(n_n):
+    for _ in range(n_n):
         list_a_input = input().split(" follows ")
         L_n.extend(list_a_input)
     print(tokenize(L_n, n_n))
