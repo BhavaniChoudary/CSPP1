@@ -8,7 +8,7 @@ def main():
     '''
     string = ""
     n_a = int(input())
-    for i in range(n_a):
+    for _ in range(n_a):
         string += input()
         string += '\n'
     print(string)
