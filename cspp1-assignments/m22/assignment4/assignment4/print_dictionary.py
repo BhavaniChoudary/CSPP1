@@ -10,7 +10,8 @@ def print_dictionary(dictionary):
     for i in range():
     	if i in dict():
     		return dict.value
-    	else:
+    return dict
+
 
     
 
