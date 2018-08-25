@@ -11,6 +11,7 @@ def clean_string(string):
     str_a = 0
     for char in string:
         if char in "!@#$%^&*()":
+            str_a += 1
             print("")
     return string
 
