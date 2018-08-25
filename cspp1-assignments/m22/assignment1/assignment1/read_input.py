@@ -12,7 +12,7 @@ def main():
         i += 1
         string += input()
         string += '\n'
-    return string
+    print(string)
 
 if __name__ == '__main__':
     main()
