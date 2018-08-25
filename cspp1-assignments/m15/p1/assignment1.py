@@ -226,7 +226,7 @@ class CiphertextMessage(Message):
         return self.decrypted_message
 
 def main():
-    ''' 
+    '''
     Main method
     '''
     ciphertext = CiphertextMessage(input())
