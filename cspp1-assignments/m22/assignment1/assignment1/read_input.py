@@ -11,7 +11,7 @@ def main():
     for i in range(n_a):
         i += 1
         string += input()
-        string += '\n'
+        #string += '\n'
     print(string)
 
 if __name__ == '__main__':
