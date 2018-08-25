@@ -43,7 +43,7 @@ def get_story_string():
     return story
 
 
-WORDLIST_file_lengthname = 'words.txt'
+WORDLIST_FILE_LENGTHNAME = 'words.txt'
 class Message:
     '''
     Message object
