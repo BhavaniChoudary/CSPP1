@@ -4,7 +4,7 @@ Write a python program to read multiple lines of text input and store the input 
 
 def main():
     string = " "
-    n = int(input())
+    n_a = int(input())
     for i in range(n):
     	i += 1
     	string = input()
