@@ -4,7 +4,6 @@ alphabets in both upper and lower case and numbers.
 '''
 
 def clean_string(string):
-    string = input()
     clean_string = 0
     for char in string:
         if char in "!@#$%^&*":
