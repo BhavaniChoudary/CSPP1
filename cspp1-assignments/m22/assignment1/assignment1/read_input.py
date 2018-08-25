@@ -8,7 +8,7 @@ def main():
     for i in range(n):
     	i = 1
     	string = input()
-
+    return string
 
 if __name__ == '__main__':
     main()
