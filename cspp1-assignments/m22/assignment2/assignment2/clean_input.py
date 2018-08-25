@@ -7,6 +7,7 @@ def clean_string(string):
     '''
     to remove special characters
     '''
+    string = input()
     for char in string:
         if char in "!@#$%^&*()":
             print("")
