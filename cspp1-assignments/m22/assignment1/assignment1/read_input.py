@@ -9,7 +9,6 @@ def main():
     string = ""
     n_a = int(input())
     for i in range(n_a):
-        i += 1
         string += input()
         string += '\n'
     print(string)
