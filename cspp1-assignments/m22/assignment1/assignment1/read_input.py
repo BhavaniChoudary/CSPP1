@@ -6,7 +6,7 @@ def main():
     '''
     reading input
     '''
-    string = " "
+    string = ""
     n_a = int(input())
     for i in range(n_a):
         #i += 1
