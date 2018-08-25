@@ -9,7 +9,7 @@ def clean_string(string):
     '''
     for char in string:
         if char in "!@#$%^&*()":
-            input += 1
+            char += 1
             print("")
     return string
 
