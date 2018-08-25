@@ -5,6 +5,13 @@ the key and frequency with a SPACE - SPACE.
 '''
 
 def print_dictionary(dictionary):
+    dict ={}
+    dict.sort()
+    for i in range():
+    	if i in dict():
+    		return dict.value
+    	else:
+
     
 
 def main():
