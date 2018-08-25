@@ -8,7 +8,7 @@ def tokenize(string):
     Tokenize
     '''
     dict_n = {}
-    for _ in range(0, len(string)):
+    for i in range(0, len(string)):
         if string[i] not in dict_n:
             dict_n[string[i]] = string[i+1].split(",")
     return dict_n
