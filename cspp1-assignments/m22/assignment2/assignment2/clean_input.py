@@ -7,10 +7,14 @@ def clean_string(string):
     '''
     to remove special characters
     '''
+    final_str = ""
     for char in string:
         if char in "!@#$%^&*()":
-            print("")
-    return string
+            char = ""
+            final_str = final_str + char
+        else:
+            final_str = final_str + char
+    return final_str
 
 def main():
     '''
