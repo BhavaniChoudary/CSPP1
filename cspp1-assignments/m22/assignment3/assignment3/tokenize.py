@@ -11,12 +11,12 @@ def tokenize(string):
     a_c = []
     dic_t = {}
     for word in string:
-        wo_rd = (re.sub(r'[^\w\s]', '', word))
-        a_b.append(wo_rd)
-    for lin in a_b:
-        a_c.append(lin.split())
-    for line in a_c:
-        for words in line:
+        a_d = (re.sub(r'[^\w\s]', '', word))
+        a_b.append(a_d)
+    for l in a_b:
+        a_c.append(l.split())
+    for a in a_c:
+        for words in a:
             if words not in dic_t.keys():
                 dic_t[words] = 0
             dic_t[words] += 1
