@@ -1,5 +1,5 @@
 '''
-
+frequency graph
 '''
 def frequency_graph(dictionary):
     '''
