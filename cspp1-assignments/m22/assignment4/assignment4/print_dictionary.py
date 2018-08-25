@@ -16,7 +16,6 @@ def print_dictionary(dictionary):
     return dict
 
 
-    
 
 def main():
     dictionary = eval(input())
