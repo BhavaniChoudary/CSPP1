@@ -13,7 +13,7 @@ def print_dictionary(dictionary):
 
 def main():
     '''
-    This function reads the input and calls the funtion print_dictionary()
+    calls print_dictionary()
     '''
     dictionary = eval(input())
     print_dictionary(dictionary)
