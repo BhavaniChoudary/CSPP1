@@ -7,7 +7,7 @@ def tokenize(string):
 	'''
 	Tokenize
 	'''
-    dict_n = {}
+    dict_n = { }
     for _ in range(0, len(list_a), 2):
         if list_a[i] not in dict_n:
             dict_n[list_a[i]] = list_a[i+1].split(",")
