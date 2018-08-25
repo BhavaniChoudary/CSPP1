@@ -10,7 +10,7 @@ def clean_string(string):
     for char in string:
         if char in "!@#$%^&*()":
             print("")
-    return clean_string
+    print(clean_string)
 
 def main():
     '''
