@@ -5,8 +5,8 @@ alphabets in both upper and lower case and numbers.
 
 def clean_string(string):
     for char in string:
-        if char in "!@#$%^&*()":
-        	print("")
+    	if char in "!@#$%^&*()":
+    		print("")
 
 def main():
     string = input()
