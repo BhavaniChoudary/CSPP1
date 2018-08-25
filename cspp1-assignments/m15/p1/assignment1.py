@@ -10,10 +10,10 @@ def load_words(file_name):
     Depending on the size of the word list, this function may
     take a while to finish.
     '''
-    in_file = open(file_name, 'r')
-    line = in_file.readline()
+    file_in = open(file_name, 'r')
+    line = file_in.readline()
     word_list = line.split()
-    in_file.close()
+    file_in.close()
     return word_list
 
 def is_word(word_list, word):
@@ -37,13 +37,13 @@ def get_story_string():
     """
     Returns: a joke in encrypted text.
     """
-    filen = open("story.txt", "r")
-    story = str(filen.read())
-    filen.close()
+    file_length = open("story.txt", "r")
+    story = str(file_length.read())
+    file_length.close()
     return story
 
 
-WORDLIST_FILENAME = 'words.txt'
+WORDLIST_file_lengthAME = 'words.txt'
 class Message:
     '''
     Message object
