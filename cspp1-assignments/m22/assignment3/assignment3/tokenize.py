@@ -11,12 +11,12 @@ def tokenize(string):
     return dict_n
 
 def main():
-    L = []
-    n = int(input())
-    for i in range(n):
+    L_n = []
+    n_n = int(input())
+    for i in range(n_n):
         list_a_input = input().split(" follows ")
-        L.extend(list_a_input)
-    print(tokenize(L, n))
+        L_n.extend(list_a_input)
+    print(tokenize(L_n, n_n))
 
 if __name__ == '__main__':
     main()
