@@ -4,6 +4,9 @@ each word
 '''
 
 def tokenize(string):
+	'''
+	Tokenize
+	'''
     dict_n = {}
     for _ in range(0, len(list_a), 2):
         if list_a[i] not in dict_n:
@@ -11,6 +14,9 @@ def tokenize(string):
     return dict_n
 
 def main():
+	'''
+	Main function
+	'''
     l_n = []
     n_n = int(input())
     for _ in range(n_n):
