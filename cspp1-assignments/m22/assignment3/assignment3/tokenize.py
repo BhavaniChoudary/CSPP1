@@ -22,7 +22,7 @@ def main():
     for _ in range(n_n):
         string_input = input().split(" ")
         l_n.extend(string_input)
-    print(tokenize(l_n, n_n))
+    print(tokenize(l_n))
 
 if __name__ == '__main__':
     main()
