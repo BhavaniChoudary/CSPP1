@@ -17,12 +17,6 @@ def main():
 	'''
 	Main function
 	'''
-    l_n = []
-    n_n = int(input())
-    for _ in range(n_n):
-        list_a_input = input().split(" ")
-        l_n.extend(list_a_input)
-    print(tokenize(l_n, n_n))
 
 if __name__ == '__main__':
     main()
